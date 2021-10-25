@@ -1,0 +1,24 @@
+{
+    "name": "official_portfolio",
+    "version": "1.0.0",
+    "description": "My oficcial\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Df\u001b[C\u001b[\u001b[\u001b[\u001bLucio Ledesma's official portfolio",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass sources/scss/:sources/css/ --watch"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lucioled/portfolio.git"
+    },
+    "author": "Lucio Ledesma",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lucioled/portfolio/issues"
+    },
+    "homepage": "https://github.com/lucioled/portfolio#readme",
+    "dependencies": {
+        "bootstrap": "^5.1.3",
+        "sass": "^1.43.3"
+    }
+}
