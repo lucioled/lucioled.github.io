@@ -1,3 +1,16 @@
-* {
-    color: red;
-}
+/* IMPORT BOOSTRAP */
+
+@import "./custom";
+
+/* IMPORT UTILITIES */
+
+@import "./utilities/separator-line";
+@import "./utilities/visibility-efects";
+
+/* IMPORT SECTIONS */
+
+@import "./sections/header";
+@import "./sections/about";
+@import "./sections/projects";
+@import "./sections/contact";
+@import "./sections/footer";

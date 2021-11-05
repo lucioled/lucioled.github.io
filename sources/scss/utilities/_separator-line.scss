@@ -1,0 +1,18 @@
+.separator-line::before {
+    content: "";
+    width: 16rem;
+    height: 0.2rem;
+    background-color: $primary;
+    display: block;
+    margin: 0 auto;
+}
+
+.separator-line::after {
+    content: "";
+    width: 5rem;
+    height: 0.4rem;
+    background-color: $primary;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}

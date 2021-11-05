@@ -1,0 +1,23 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* THEME COLORS */
+
+$white: #eef;
+$primary: #0E2E34;
+$primary1: #0E2E34DD;
+$primary2: #0E2E34AA;
+$primary3: #0E2E3488;
+$primary4: #0E2E3455;
+$primary5: #0E2E3422;
+$secondary: #150015;
+$tertiary: #fc7303;
+
+/* FONT SIZES */
+
+body {
+    background-color: $white;
+}

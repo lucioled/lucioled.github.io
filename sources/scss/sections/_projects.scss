@@ -1,0 +1,18 @@
+    .project-section {
+        background-color: $white;
+        height: 100%;
+    }
+    /* Carousel */
+    
+    .carousel {
+        height: auto;
+        min-height: 45vh;
+    }
+    
+    .carousel-item {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }

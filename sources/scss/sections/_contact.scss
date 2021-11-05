@@ -1,0 +1,29 @@
+.contact-form {
+    border: 2px solid $secondary;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    background: radial-gradient(#fff, $white);
+    box-shadow: 1px 1px 3px $secondary;
+    label {
+        width: 100%;
+        font-family: 'Acme', sans-serif;
+    }
+    input {
+        width: 90%;
+        &::placeholder {
+            font-size: .7rem;
+            padding: 5px 2px;
+        }
+    }
+    textarea {
+        width: 90%;
+    }
+    .button-wrapper {
+        width: 90%;
+        button {
+            display: block;
+            margin-left: auto;
+        }
+    }
+}

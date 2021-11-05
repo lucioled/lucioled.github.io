@@ -1,0 +1,36 @@
+.header-section {
+    background-image: url("../images/vortex-background.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+    color: #eee;
+    /* NAVBAR */
+    .navbar {
+        background-color: #121212ee;
+        top: -1.2rem;
+        // width: 90%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        &-brand {
+            width: 20%;
+        }
+        .logo {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    /* END-NAVBAR */
+    h1 {
+        font-size: 3rem;
+    }
+    img {
+        margin-top: 5rem;
+        width: 90%;
+    }
+}
+
+.wave {
+    position: relative;
+    top: -60px;
+}
