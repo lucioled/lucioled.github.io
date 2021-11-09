@@ -138,21 +138,26 @@
         <div class="separator-line"></div>
 
         <div class="container">
-            <form method="post" class="contact-form py-4 px-3" enctype="text/plain" name="contact" data-netlify=”true” netlify-honeypot="bot-field" data-netlify-recaptcha="true">
-                <input type="hidden" name="form-name" value="contact">
-
-                <label for="contact-name" class="my-2">Name</label>
-                <input class="fs-6" type="text" name="name" id="contact-name" placeholder="Name" required>
-
-
-                <label for="contact-email" class="my-2">Your Email</label>
-                <input class="fs-6" type="email" name="email" id="contact-email" placeholder="example@example.com" required>
-                <label for="contact-msg" class="my-2">Message</label>
-                <textarea class="fs-6" name="message" id="contact-msg" cols="20" rows="10" required></textarea>
-
-                <div class="button-wrapper">
-                    <button type="submit" class="btn btn-outline-success mt-2 ">Send</button>
-                </div>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
             </form>
         </div>
     </section>
