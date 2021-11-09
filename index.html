@@ -138,28 +138,30 @@
         <div class="separator-line"></div>
 
         <div class="container">
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
+
+
+            <form name="contact" method="POST" data-netlify="true" class="contact-form py-4 px-3">
+                <p ">
+                    <label>Your Name: <input class="my-3 type="text" name="name" placeholder="Name" />
+                </label>
                 </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
+                <p ">
+                    <label>Your Email: <input class="my-3 type="email" name="email" placeholder="example@" />
+                </label>
                 </p>
-                <p>
-                    <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                  </select></label>
+
+                <p ">
+                    <label>Message: <textarea class="my-3 name="message">
+                    </textarea>
+                    </label>
                 </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
+                <div class="button-wrapper">
+                    <button type="submit" class="btn btn-outline-success mt-2 ">Send</button>
+                </div>
             </form>
         </div>
+
+
     </section>
 
     <footer>
