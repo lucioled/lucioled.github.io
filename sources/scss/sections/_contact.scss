@@ -11,6 +11,7 @@
     }
     input {
         width: 90%;
+        display: block;
         &::placeholder {
             font-size: .7rem;
             padding: 5px 2px;
@@ -18,6 +19,7 @@
     }
     textarea {
         width: 90%;
+        display: block;
     }
     .button-wrapper {
         width: 90%;

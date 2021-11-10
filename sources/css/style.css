@@ -11264,6 +11264,7 @@ body {
 }
 .contact-form input {
   width: 90%;
+  display: block;
 }
 .contact-form input::placeholder {
   font-size: 0.7rem;
@@ -11271,6 +11272,7 @@ body {
 }
 .contact-form textarea {
   width: 90%;
+  display: block;
 }
 .contact-form .button-wrapper {
   width: 90%;
