@@ -11,8 +11,30 @@
     
     .carousel-item {
         height: 100%;
+        position: relative;
         img {
             height: 100%;
             width: 100%;
+        }
+        .project-captions {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            z-index: 200;
+            p {
+                font-weight: 900;
+            }
+            button {
+                width: 50%;
+                color: $white;
+                font-weight: 900;
+                border: none;
+                background-color: $secondary1;
+                box-shadow: 1px 1px 3px #000;
+                transition: .3s;
+                &:hover {
+                    background-color: $secondary;
+                }
+            }
         }
     }

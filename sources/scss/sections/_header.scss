@@ -1,7 +1,9 @@
+/* MOBILE FIRST */
+
 .header-section {
     background-image: url("../images/vortex-background.svg");
     background-size: cover;
-    width: 100vw;
+    width: auto;
     height: 100vh;
     padding-top: 5rem;
     color: #eee;
@@ -12,25 +14,77 @@
         // width: 90%;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+        @include media-breakpoint-up(xl) {
+            top: -2rem;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .nav-link {
+            @include media-breakpoint-up(lg) {
+                margin-right: 2rem;
+            }
+        }
         &-brand {
             width: 20%;
         }
         .logo {
             margin: 0;
             width: 100%;
+            @include media-breakpoint-up(sm) {
+                width: 40%;
+            }
+            @include media-breakpoint-up(xl) {
+                width: 30%;
+            }
         }
     }
     /* END-NAVBAR */
-    h1 {
-        font-size: 3rem;
+    .introductive-captions {
+        background-image: linear-gradient(220deg, $white, $tertiary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        h1 {
+            font-size: 3rem;
+            color: transparent;
+            @include media-breakpoint-up(sm) {
+                font-size: 4rem;
+            }
+        }
+        h3 {
+            color: transparent;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 45%;
+            height: fit-content;
+        }
     }
     img {
+        position: relative;
         margin-top: 5rem;
         width: 90%;
+        z-index: 100;
+        @include media-breakpoint-up(sm) {
+            width: 90%;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 45%;
+            padding: 1rem;
+            margin-top: 0;
+        }
     }
 }
 
 .wave {
     position: relative;
     top: -60px;
+    @include media-breakpoint-up(sm) {
+        top: -120px;
+    }
+    @include media-breakpoint-up(lg) {
+        top: -180px;
+    }
+    @include media-breakpoint-up(xl) {
+        top: -250px;
+    }
 }

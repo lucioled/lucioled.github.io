@@ -5,6 +5,10 @@
     border-radius: 20px;
     background: radial-gradient(#fff, $white);
     box-shadow: 1px 1px 3px $secondary;
+    @include media-breakpoint-up(lg) {
+        width: 80%;
+        margin: 0 auto;
+    }
     label {
         width: 100%;
         font-family: 'Acme', sans-serif;

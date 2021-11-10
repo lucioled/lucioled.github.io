@@ -21,9 +21,9 @@
 </head>
 
 <body>
-
-    <header class="header-section ">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mx-auto">
+    <!-- HEADER SECTION -->
+    <header class="header-section d-lg-flex flex-wrap">
+        <nav class="w-100 navbar navbar-expand-lg navbar-dark fixed-top mx-auto w-100">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./sources/images/logo.png" alt="" class="logo"></a>
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,31 +31,34 @@
               </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link" href="#">Projects</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link fs-4" aria-current="page" href="#">Home</a>
+                        <a class="nav-link fs-4" href="#about-section">About</a>
+                        <a class="nav-link fs-4" href="#project-section">Projects</a>
+                        <a class="nav-link fs-4" href="#contact-section">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <h1 class="text-center mb-2">Hi! I'm Lucio</h1>
-        <h3 class="text-center h4">Web Developer</h3>
+        <div class="introductive-captions my-auto">
+            <h1 class="text-center mb-2">Hi! I'm Lucio</h1>
+            <h3 class="text-center h4">Web Developer</h3>
+        </div>
 
         <img src="./sources/images/coding.svg" alt="Coding Ilustration" class="mx-auto d-block">
     </header>
+    <!-- END HEADER SECTION -->
 
-
-
+    <!-- MAIN SECTION -->
     <main class="main-section">
         <img src="./sources/images/wave1.svg" alt="" class="wave">
 
         <div class="container">
             <section class="main-section__about col-12
-            ">
+            " id="about-section">
                 <h2 class="text-center h1">ABOUT</h2>
                 <div class="separator-line"></div>
+                <!-- ABOUT SECTION -->
 
                 <div class="about-panel col-12 ">
                     <div class="about-panel__nav d-flex justify-content-start align-items-center">
@@ -88,36 +91,32 @@
                 </div>
             </section>
         </div>
+        <!-- END ABOUT SECTION -->
+        <!-- PROJECTS SECTION -->
 
-        <section class="project-section py-5 my-5">
+        <section class="project-section py-5 my-5" id="project-section">
             <div class="container">
                 <h2 class="text-center h1">PROJECTS</h2>
                 <div class="separator-line"></div>
 
                 <div id="carouselExampleDark" class="carousel carousel-dark slide d-flex align-items-center" data-bs-ride="carousel">
 
-                    <div class="carousel-inner ">
+                    <div class="carousel-inner">
                         <div class="carousel-item  active" data-bs-interval="10000">
                             <img src="./sources/images/project-01.png" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First Project</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center project-captions">
+                                <p class="text-center fs-3 d-lg-none">To do's list</p>
+                                <button type="submit" class="d-lg-none ">SEE MORE</button>
                             </div>
                         </div>
                         <div class="carousel-item " data-bs-interval="2000">
                             <img src="./sources/images/project-02.png" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second Project</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center project-captions">
+                                <p class="text-center fs-3 d-lg-none">Quiz game</p>
+                                <button type="submit" class="d-lg-none ">SEE MORE</button>
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="./sources/images/project-03.png" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third project</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -130,10 +129,13 @@
                 </div>
             </div>
         </section>
+        <!-- END PROJECTS SECTION -->
 
     </main>
 
-    <section class="contact-section">
+    <!-- END MAIN SECTION -->
+
+    <section class="contact-section" id="contact-section">
         <h2 class="text-center h1">CONTACT</h2>
         <div class="separator-line"></div>
 
@@ -146,7 +148,7 @@
                 </label>
                 </p>
                 <p ">
-                    <label>Your Email: <input class="my-3 type="email" name="email" placeholder="example@" />
+                    <label>Your Email: <input class="my-3 type="email" name="email" placeholder="example@example.com" />
                 </label>
                 </p>
 
