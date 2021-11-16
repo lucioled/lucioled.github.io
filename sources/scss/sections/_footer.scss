@@ -4,5 +4,23 @@
     color: $white;
     .copyright-caption {
         margin: 0;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+        }
+    }
+    .social-media {
+        color: #999;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+        }
+        i {
+            color: #999;
+            transition: all .3s;
+            &:hover {
+                color: $tertiary;
+            }
+        }
     }
 }

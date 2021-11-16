@@ -1,40 +1,85 @@
-    .project-section {
-        background-color: $white;
+.project-section {
+    background-color: $white;
+    height: 100%;
+}
+
+
+/* Carousel */
+
+.carousel {
+    height: auto;
+    min-height: 45vh;
+}
+
+.carousel-item {
+    height: 100%;
+    position: relative;
+    img {
         height: 100%;
-    }
-    /* Carousel */
-    
-    .carousel {
-        height: auto;
-        min-height: 45vh;
-    }
-    
-    .carousel-item {
-        height: 100%;
+        width: 100%;
         position: relative;
-        img {
-            height: 100%;
-            width: 100%;
+        top: 25px;
+    }
+    .project-captions {
+        position: relative;
+        bottom: 5px;
+        width: 100%;
+        z-index: 200;
+        p {
+            font-weight: 900;
         }
-        .project-captions {
-            position: absolute;
-            bottom: 5px;
-            width: 100%;
-            z-index: 200;
-            p {
-                font-weight: 900;
+        button {
+            width: 50%;
+            font-weight: 900;
+            border: none;
+            background-color: $secondary1;
+            box-shadow: 1px 1px 3px #000;
+            transition: .3s;
+            &:hover {
+                background-color: $secondary;
             }
-            button {
-                width: 50%;
+            a {
                 color: $white;
-                font-weight: 900;
-                border: none;
-                background-color: $secondary1;
-                box-shadow: 1px 1px 3px #000;
-                transition: .3s;
-                &:hover {
-                    background-color: $secondary;
-                }
+                text-decoration: none;
             }
         }
     }
+    .project-info-icon {
+        position: absolute;
+        border-radius: 50%;
+        color: $secondary;
+        padding: 0.2%;
+        background-color: transparent;
+        right: 10px;
+        top: 30px;
+        z-index: 200;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover {
+            color: $tertiary;
+            background-color: $tertiary5;
+        }
+    }
+}
+
+.project-info-modal {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    background-color: #000e;
+    &__panel {
+        width: 80%;
+        height: fit-content;
+        min-height: 50vh;
+        background-color: $white;
+    }
+    &__close-btn {
+        width: 100%;
+        i {
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}

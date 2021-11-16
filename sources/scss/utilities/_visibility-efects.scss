@@ -5,3 +5,47 @@
 .inactive-info {
     display: none;
 }
+
+@keyframes modal-appear {
+    0% {
+        opacity: 0;
+        height: 0vh;
+        top: 50vh;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+        height: 100vh;
+    }
+}
+
+@keyframes modal-disappear {
+    0% {
+        opacity: 1;
+        height: 100vh;
+        top: 0vh;
+    }
+    100% {
+        opacity: 0;
+        top: 50vh;
+        height: 0vh;
+    }
+}
+
+@keyframes observerAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes observerDisappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

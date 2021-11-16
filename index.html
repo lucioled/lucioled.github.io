@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Import Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/054da65499.js" crossorigin="anonymous"></script>
     <!-- Import ACME font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +31,7 @@
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link fs-4" aria-current="page" href="#">Home</a>
                         <a class="nav-link fs-4" href="#about-section">About</a>
@@ -45,7 +47,7 @@
             <h3 class="text-center h4">Web Developer</h3>
         </div>
 
-        <img src="./sources/images/coding.svg" alt="Coding Ilustration" class="mx-auto d-block">
+        <img src="./sources/images/coding.svg" alt="Coding Ilustration" class="coding-ilust mx-auto d-block">
     </header>
     <!-- END HEADER SECTION -->
 
@@ -102,18 +104,24 @@
                 <div id="carouselExampleDark" class="carousel carousel-dark slide d-flex align-items-center" data-bs-ride="carousel">
 
                     <div class="carousel-inner">
-                        <div class="carousel-item  active" data-bs-interval="10000">
+                        <div class="carousel-item  active" data-bs-interval="5000">
+                            <i class="far fa-question-circle project-info-icon fs-4"></i>
                             <img src="./sources/images/project-01.png" class="d-block" alt="...">
                             <div class="d-flex flex-column justify-content-center align-items-center project-captions">
-                                <p class="text-center fs-3 d-lg-none">To do's list</p>
-                                <button type="submit" class="d-lg-none ">SEE MORE</button>
+                                <p class="text-center fs-5 ">To do's list</p>
+                                <button type="submit" class=""><a href="#">SEE MORE</a></button>
                             </div>
+
+
+
+
                         </div>
-                        <div class="carousel-item " data-bs-interval="2000">
+                        <div class="carousel-item " data-bs-interval="2500">
+                            <i class="far fa-question-circle project-info-icon fs-4"></i>
                             <img src="./sources/images/project-02.png" class="d-block" alt="...">
                             <div class="d-flex flex-column justify-content-center align-items-center project-captions">
-                                <p class="text-center fs-3 d-lg-none">Quiz game</p>
-                                <button type="submit" class="d-lg-none ">SEE MORE</button>
+                                <p class="text-center fs-5 ">Quiz game</p>
+                                <button type="submit" class=""><a href="#">SEE MORE</a></button>
                             </div>
                         </div>
 
@@ -129,6 +137,20 @@
                 </div>
             </div>
         </section>
+        <!-- PROJECT INFO MODALl -->
+        <div class="project-info-modal d-none justify-content-center align-content-center flex-wrap">
+            <div class="project-info-modal__panel p-2 text-justify">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos labore sunt pariatur odio commodi voluptatum nulla temporibus esse blanditiis non error asperiores, vitae mollitia. Exercitationem minus illum aperiam dolore?</p>
+            </div>
+
+            <div class="project-info-modal__close-btn d-flex justify-content-center mt-3">
+                <i class="far fa-window-close fs-2 "></i>
+            </div>
+
+
+        </div>
+
+        <!-- END PROJECT INFO MODAL -->
         <!-- END PROJECTS SECTION -->
 
     </main>
@@ -153,7 +175,7 @@
                 </p>
 
                 <p ">
-                    <label>Message: <textarea class="my-3 " name="message ">
+                    <label>Message: <textarea class="my-3 " rows="5 " name="message ">
                     </textarea>
                     </label>
                 </p>
@@ -167,8 +189,14 @@
     </section>
 
     <footer>
-        <div class="footer-section p-5 fs-6 mt-5 ">
+        <div class="footer-section p-4 fs-6 mt-5 d-flex flex-wrap ">
             <p class="text-center copyright-caption ">2021° Copyrigth | All rights reserved</p>
+            <div class="social-media text-center ">
+                <p class="fs-6 d-inline-block ">My social media:</p>
+                <a href="https://www.instagram.com/lucchetti.mp3/ " target="_blank " class="d-inline-block "><i class=" fs-6 fab fa-instagram my-1 mx-3 "></i></a>
+                <a href="# " class="d-inline-block "><i class="fs-6 fab fa-linkedin-in my-1 mx-3 "></i></a>
+
+            </div>
         </div>
     </footer>
 

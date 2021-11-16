@@ -11157,6 +11157,46 @@ body {
   display: none;
 }
 
+@keyframes modal-appear {
+  0% {
+    opacity: 0;
+    height: 0vh;
+    top: 50vh;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+    height: 100vh;
+  }
+}
+@keyframes modal-disappear {
+  0% {
+    opacity: 1;
+    height: 100vh;
+    top: 0vh;
+  }
+  100% {
+    opacity: 0;
+    top: 50vh;
+    height: 0vh;
+  }
+}
+@keyframes observerAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes observerDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* IMPORT SECTIONS */
 /* MOBILE FIRST */
 .header-section {
@@ -11322,9 +11362,11 @@ body {
 .carousel-item img {
   height: 100%;
   width: 100%;
+  position: relative;
+  top: 25px;
 }
 .carousel-item .project-captions {
-  position: absolute;
+  position: relative;
   bottom: 5px;
   width: 100%;
   z-index: 200;
@@ -11334,7 +11376,6 @@ body {
 }
 .carousel-item .project-captions button {
   width: 50%;
-  color: #eef;
   font-weight: 900;
   border: none;
   background-color: #150015dd;
@@ -11343,6 +11384,48 @@ body {
 }
 .carousel-item .project-captions button:hover {
   background-color: #150015;
+}
+.carousel-item .project-captions button a {
+  color: #eef;
+  text-decoration: none;
+}
+.carousel-item .project-info-icon {
+  position: absolute;
+  border-radius: 50%;
+  color: #150015;
+  padding: 0.2%;
+  background-color: transparent;
+  right: 10px;
+  top: 30px;
+  z-index: 200;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.carousel-item .project-info-icon:hover {
+  color: #fc7303;
+  background-color: #fc730322;
+}
+
+.project-info-modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  top: 0;
+  position: fixed;
+  background-color: #000e;
+}
+.project-info-modal__panel {
+  width: 80%;
+  height: fit-content;
+  min-height: 50vh;
+  background-color: #eef;
+}
+.project-info-modal__close-btn {
+  width: 100%;
+}
+.project-info-modal__close-btn i {
+  color: #eef;
+  cursor: pointer;
 }
 
 .contact-form {
@@ -11390,6 +11473,28 @@ body {
 }
 .footer-section .copyright-caption {
   margin: 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .footer-section .copyright-caption {
+    width: 50%;
+  }
+}
+.footer-section .social-media {
+  color: #999;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .footer-section .social-media {
+    width: 50%;
+  }
+}
+.footer-section .social-media i {
+  color: #999;
+  transition: all 0.3s;
+}
+.footer-section .social-media i:hover {
+  color: #fc7303;
 }
 
 /*# sourceMappingURL=style.css.map */
