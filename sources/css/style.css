@@ -11227,6 +11227,21 @@ body {
     margin-right: 2rem;
   }
 }
+.header-section .navbar .nav-link .language-option {
+  width: 5%;
+  margin: 0;
+  transition: all 0.3s;
+  filter: saturate(0);
+}
+@media (min-width: 992px) {
+  .header-section .navbar .nav-link .language-option {
+    width: 40px;
+    padding: 0;
+  }
+}
+.header-section .navbar .nav-link .current-language {
+  filter: saturate(1);
+}
 .header-section .navbar-brand {
   width: 20%;
 }
@@ -11343,6 +11358,9 @@ body {
 .about-panel__info__tab--2 {
   display: none;
 }
+.about-panel__info__tab--2 .skill-logo {
+  width: 4%;
+}
 
 .project-section {
   background-color: #eef;
@@ -11426,6 +11444,10 @@ body {
 .project-info-modal__close-btn i {
   color: #eef;
   cursor: pointer;
+  transition: 0.3s;
+}
+.project-info-modal__close-btn i:hover {
+  color: #f55;
 }
 
 .contact-form {

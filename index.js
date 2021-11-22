@@ -61,9 +61,6 @@ let observer = new IntersectionObserver(observeElements, {
 function observeElements(entries) {
     for (let entry of entries) {
         if (entry.isIntersecting) {
-            console.log(entry.isIntersecting)
-
-            console.log(entry.target.innerText)
 
             entry.target.style.animation = "observerAppear 1.2s forwards"
         } else {
@@ -79,3 +76,5 @@ let observableElements = document.querySelectorAll(".coding-ilust, .main-section
 for (let elmt of observableElements) {
     observer.observe(elmt)
 }
+
+/* ENG - ES Option */

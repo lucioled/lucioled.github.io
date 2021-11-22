@@ -23,6 +23,19 @@
             @include media-breakpoint-up(lg) {
                 margin-right: 2rem;
             }
+            .language-option {
+                width: 5%;
+                margin: 0;
+                transition: all .3s;
+                filter: saturate(0);
+                @include media-breakpoint-up(lg) {
+                    width: 40px;
+                    padding: 0;
+                }
+            }
+            .current-language {
+                filter: saturate(1)
+            }
         }
         &-brand {
             width: 20%;
